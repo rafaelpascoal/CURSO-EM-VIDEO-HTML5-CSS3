@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negrito e Itálico do jeito certo</title>
+
+    <style>
+        mark#alterado {
+            background-color: rgb(45, 241, 61);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito ou Destaque</h2>
+    <p><b>Nessa frase temos um termo em negrito utlizando a tag b,</b> NÃO SEMÂNTICA.</p><br>
+    <p>Nessa frase temos <strong>um termo em destaque,</strong> com a tag <STRONG>STRONG</STRONG>, SEMÂNTICA.</p><br>
+    <h2>Itálico ou Enfase</h2>
+    <p>Nessa frase temos <i>um termo em itálico,</i> usando a tag i, NÃO SEMÂNTICA.</p><br>
+    <p>Nessa frase temos <em>um termo em ênfase,</em> usando a tag <strong>EM</strong>, SEMÂNTICA.</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar, também, <mark id="alterado">um texto marcado</mark> com a tag <mark id="normal">MARK.</mark> (lembrando que é possível alterar a cor do "marca texto" com o CSS - background-color)</p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p> <br>
+    <p>Com relação à tag big, está obsoleta (fica vermelha no código envelopado), pois não há sentido, semântica (se você quiser um texto grande, utiliza as tags H1 a H6 ou altera o tamanho das letras com CSS). Já a tag small ainda é válida, pois existem situações em que há letras miúdas, letras de rodapé (Exemplo: Em contratos, é possível que haja itens em letras menores como uma referência) e, portanto, há um sentido, há semântica.</p>
+    <h2>Texto Deletado</h2>
+    <p><del>Podemos marcar um texto como excluído, para indicar que ele deve ser lido, mas não considerado, com a tag DEL.</del></p>
+    <h2>Texto Inserido</h2>
+    <p><INS>Podemos marcar um texto como inserido, para dar ênfase e indicar que ele foi adicionado posteriormente, com a tag INS, SEMÂNTICA.</INS></p><br>
+    <p>É possível, também, <u>sublinhar</u> o texto com a tag U, NÃO SEMÂNTICA.</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3 com a tag SUP.</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O com a tag SUB.</p>
+</body>
+</html>
