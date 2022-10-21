@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Externos em HTML5</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>O link externo é distinto do site de origem.</p>
+    <p>Exemplo: "Você pode acessar meu <a href="https://github.com/rafaelpascoal" target="_blank" rel="external">repositório público no GitHub</a>"</p>
+    <p>Nós envelopamos o item que será disposto no site como link com a tag A (de âncora), e introduzimos o endereço de destino em href (HyperText Reference - Referência de Hypertexto).</p>
+    <p>Lembrando que: Sempre que for um link externo, é importante incluirmos na tag <strong>A</strong> dois outros comandos, além de href. O primeiro é <strong>target="_blank"</strong> (para que uma nova aba seja aberta assim que se clica no link. Isso faz com que a página de origem/principal seja mantida aberta também) e <strong>rel="external"</strong> (para indicar nos códigos de desenvolvimento que o link é externo.)</p>
+
+    <h1>Links Externos não Validados</h1>
+    <p>Links externos não validados (sem o aval do proprietário da página de origem para o conteúdo patrocinado) são aqueles que são patrocinados e que não fazem parte do objetivo principal da página de origem (propagandas, etc). Exemplo:</p>
+    <p>Esta página é um oferecimento de <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-2-links-internos-2/" target="_blank" rel="nofollow">Curso em Vídeo</a></p>
+    <p>Para esses links, utilizamos o comando rel="nofollow" (não siga), para que o mecanismo de busca não perpetue uma busca constante por esse link.</p>
+</body>
+</html>
