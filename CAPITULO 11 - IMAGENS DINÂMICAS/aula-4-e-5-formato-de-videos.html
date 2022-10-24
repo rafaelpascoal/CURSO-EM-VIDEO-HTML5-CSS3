@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de vídeos para sites</title>
+
+    <style>
+        video {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formato de vídeos para sites</h1>
+    <p>Para podermos alterar as extensões de vídeos, utilizamos o aplicativo HandBrake. Nele, podemos alterar para várias extensões.</p>
+    <video poster="imagem/limoes-capa.png" autoplay controls loop>
+        <source src="videos/Pexels Videos 2583492.mp4" type="video/mp4">
+        <source src="videos/Pexels Videos mp4.m4v" type="video/m4v">
+        <source src="videos/Pexels Videos mp4.webm" type="video/webm">
+        <source src="videos/Pexels-Videos-2583492.ogv" type="video/ogv">
+        <p>Infelizmente, seu navegador não é compatível com o vídeo.</p>
+        <p><a href="videos/Pexels Videos 2583492.mp4">Clique aqui para fazer o download.</a></p>
+    </video>
+    <p>Para que o vídeo tenha uma capa inicial (antes que o usuário aperte o play), incluímos o comando poster na tag vídeo para que a tela não fique pausada no próprio vídeo e traga uma sensação mais profissional para a mídia.</p>
+    <p>A ordem dos sources é importante, pois o navegador sempre tentará reproduzir do primeiro ao último arquivo incluído (no caso, seria a sequência: mp4, m4v, webm e ogv)</p>
+    <p>Lembrando que, todos os arquivos incluídos aqui são de hospedagem local (estão no meu computador).</p>
+    <p>Por fim, é importante frisar que, os vídeos hospedados dessa maneira (hospedagem local) gera um aumento de custos para o cliente. Não é a maneira mais eficaz e econômica de hospedagem, pois, se os arquivos são grandes, gerará um grande tráfego de dados.</p>
+</body>
+</html>

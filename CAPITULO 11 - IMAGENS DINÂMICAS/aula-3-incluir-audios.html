@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando áudios no site</title>
+
+    Haunting Dreams de Twin Musicom é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. https://creativecommons.org/licenses/by/4.0/
+
+    Fonte: http://www.twinmusicom.org/song/249/haunting-dreams
+    
+    Artista: http://www.twinmusicom.org
+
+
+</head>
+<body>
+    <h1>Colocando áudios no site</h1>
+    <p>Para incluir áudios, podemos retirá-los do youtube em: perfil -> Youtube Studio -> Biblioteca de áudio.</p>
+    <p>Em atribuição (filtro) existem dois tipos de mídia: Atribuição não necessária e Atribuição necessária.</p>
+    <p>Se optar por atribuição necessária, toda mídia que incluir na página deve ser acompanhada de informações de direitos autorais (fornecidos pelo próprio Youtube).</p>
+    <h2>Incluindo áudios com a tag <strong>AUDIO</strong></h2>
+    <p>Utilizamos a tag AUDIO, incluindo a informação do caminho do áudio (em que local o áudio se encontra no computador), além dos comandos controls (para aparecer um display na página) e autoplay (para que a música seja reproduzida automaticamente).</p>
+    <audio src="audios/Twin Engines - Jeremy Korpas.mp3" controls autoplay></audio>
+    <audio src="audios/Retribution - NEFFEX.mp3" controls autoplay></audio>
+    <audio src="audios/Haunting Dreams - Twin Musicom.mp3" controls autoplay></audio>
+
+    <h2>Outras formas de incluir a tag AUDIO</h2>
+    <p>Criando a tag AUDIO podemos incluir outra tag interna (SOURCE SRC) e adicionarmos várias extensões do arquivo para que ele toque em uma delas (seja mp3, ogg, wav), caso não saibamos qual extensão o navegador do usuário utilizará e, caso nenhuma das extensões seja reproduzida, haverá uma mensagem para que o usuário possa realizar o download do áudio.</p>
+    <p>Além disso, temos alguns comandos relacionados a áudios e vídeos:</p>
+    <ul>
+        <li>controls - Como dito anteriomente, ele cria a imagem de display de música na página.</li>
+        <li>autoplay - Inicia a reprodução do áudio automaticamente.</li>
+        <li>loop - Faz com que, ao término do áudio, ele retorne e reproduza do início.</li>
+    </ul>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audios/Retribution - NEFFEX.mp3" type="audio/mpeg">
+        <source src="audios/Retribution - NEFFEX.mp3" type="audio/ogg">
+        <source src="audios/Retribution - NEFFEX.mp3" type="audio/wav">
+        <p>Infelizmente, seu navegador não pode reproduzir áudio.</p>
+        <a href="audios/Retribution - NEFFEX.mp3">
+            <p>Clique aqui para fazer o download.</p>
+        </a>
+    </audio>
+    <p>Por fim, é importante dizer que extensão wav é mais pesada e, por consequência, não é uma boa opção para arquivos de navegação (é ótimo para arquivo de download).</p>
+</body>
+</html>
