@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas e Imagens que se adaptam sozinhas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png"  alt="imagem flexível">
+    </picture>
+
+    <p>Bounce Hate ou taxa de rejeição é uma métrica utilizada pelo Google que mede a rejeição dos usuários a sua página, seja porque ela é pesada demais (imagens difíceis de carregar), seja pelo tamanho do layout da página (página com barras de rolagem lateral, difíceis de serem vistas em dispositivos menores). Por consequência, o Google para de indicar o site em pesquisas se esse site tem uma alta taxa de rejeição.</p>
+    <h2>Como evitar que meu site seja rejeitado?</h2>
+    <p>Conforme o exercício acima, para evitar que haja barra de rolagem lateral no site e corra o risco do bounce hate seja elevado, podemos incluir a tag <STRONG>PICTURE</STRONG> e, dentro dela, incluir, além da imagem inicial <strong>IMG</strong> (no caso do exercício escolhemos a foto grande, mas poderíamos ter iniciado com a foto pequena e alterado apenas o comando média de max-width para min-width) e o comando <strong>SOURCE:MEDIA:TYPE</strong>, incluindo as informações:</p>
+    <ul>
+        <li>max-width</li>
+        <p>Em max-width, utilizei 1030px para a transição da foto grande para a média (para que a barra de rolagem não aparecesse na transição, aumentei em 30px o tamanho de 1000px da foto g)</p>
+        <p><p>Em max-width, utilizei 730px para a transição da foto média para a pequena (para que a barra de rolagem não aparecesse na transição, aumentei em 30px o tamanho de 700px da foto m)</p></p>
+        <li>srcset</li>
+        <p>Em srcset, inseri o caminho para as fotos p e m, conforme o comando.</p>
+        <li>type</li>
+        <p>Em type, incluí apenas a extensão png, uma vez que o comando vem pré escrito como image/</p>
+    </ul>
+</body>
+</html>
