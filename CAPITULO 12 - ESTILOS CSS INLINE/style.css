@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color:darkseagreen;
+    color: brown;
+}
+h1, h2 {
+    color: white;
+    background-color: cornflowerblue;
+}
+p {
+    text-align: justify;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML 5</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        header {
+            background-color: blue;
+        }
+        nav {
+            background-color: coral;
+        }
+        a {
+            background-color: rgb(214, 152, 130);
+        }
+        main {
+            background-color: darkcyan;
+        }
+        section#noticias {
+            background-color: darkorchid;
+        }
+        article#futebol {
+            border-style: dashed;
+        }
+        aside#jose {
+            background-color: rgb(87, 5, 122);
+        }
+        h2 {
+            background-color: rgba(214, 41, 76, 0.664);
+            padding: 10px;
+            margin: 5px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grouping Tags em HTML 5</h1>
+    <h2>EXEMPLO DE HEADER: Em azul</h2>
+    <header>
+        <h1>A tag semântica <strong>HEADER</strong> é utilizada como cabeçalho.</h1> 
+        <h1>A tag semântica <strong>NAV</strong> é utilizada para criar um conjunto de links de navegação, conforme o exemplo abaixo.</h1>
+        <h2>EXEMPLO DE NAV: Em laranja</h2>
+        <nav>
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 2</a>
+            <a href="#">LINK 3</a>
+        </nav>
+    </header>
+    <h2>EXEMPLO DE MAIN: Em azul claro</h2>
+    <main>
+        <section id="assuntos">
+            <p>A tag <strong>SECTION</strong> é utilizada para criar seções na tag <strong>MAIN</strong> (como se fossem caixas organizadas de assuntos que serão disponibilizados).</p>
+            <article>
+                A tag <strong>ARTICLE</strong> é utilizada para o artigo que será mencionado na seção (Exemplo: A seção é esporte e o artigo é sobre um campeonato específico).
+            </article>
+            <aside>
+                A tag <strong>ASIDE</strong> é utilizada para informar o autor do artigo, ou seja, se o que for colocado na tag <strong>ARTICLE</strong> tiver autor, ele será mencionado na tag <strong>ASIDE</strong>
+            </aside>
+        </section>
+        <h2>EXEMPLO DE SECTION: Em roxo</h2>
+        <section id="noticias">
+            <article id="futebol">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eius cum impedit soluta veritatis dolorem distinctio ad reiciendis voluptatem esse at velit praesentium, qui, expedita molestias aspernatur sint omnis dolores.</p>
+                <h2>EXEMPLO DE ASIDE: Em roxo escuro</h2>
+
+                <aside id="jose">
+                    "Artigo escrito por José da Silva"
+                </aside>
+            </article>
+        </section>
+    </main>
+    <h2>EXEMPLO DE FOOTER: Em preto</h2>
+    <footer>
+        A tag <strong>FOOTER</strong> é utilizada para o rodapé da página
+    </footer>
+    <h1>Por fim, é importante frisar que é possível colocar qualquer grouping tag dentro de qualquer grouping tag.</h1>
+</body>
+</html>

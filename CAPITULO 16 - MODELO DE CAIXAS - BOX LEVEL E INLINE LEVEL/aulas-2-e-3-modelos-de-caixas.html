@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: darkgrey;
+            width: 500px;
+            height: 100px;
+            border-style: groove;
+            border-color: red;
+
+            outline-style: dashed; /*outline e a linha que fica entre a margem e o box*/
+        }
+
+        h1#exemplo {
+            display: inline;
+            background-color: darkgrey;
+            width: 500px;
+            height: 200px;
+            border-style: groove;
+            border-color: red;
+            
+        }
+
+        h2 {
+            background-color: aquamarine;
+            width: 500px;
+            height: 200px;
+            margin-top: 10px;
+            border-style:dashed;
+            border-color: blue;
+        }
+        h3 {
+            margin: 20px;
+        }
+        ul {
+            list-style-type: square;
+            padding: 24px;
+            /*Temos várias opções de shorthand, tanto para padding quanto para margin*/
+
+            /*padding: 15px (top) 10px (rigth) 7px (bottom) 5px (left) - para casos em que os lados são diferentes.*/
+
+            /*padding: 15px (top e bottom) 10px (rigth e left) - para casos em que, tanto top e bottom quanto rigth e left são iguais*/
+
+            /*Portanto, quando os valores são iguais, condensamos em apenas um comando e, quando os valores são distintos, discriminamos cada um deles na sequência horária.*/
+        }
+        p {
+            margin-top: 20px;
+            
+        }
+        a {
+            background-color:chocolate;
+            color: white;
+            width: 700px;
+            height: 200px;
+            border-width: 10px;
+            text-decoration: none;
+            border-style:groove;
+            border-top-color: blue;
+            border-bottom-color: crimson;
+            border-left-color: gold;
+            border-right-color: lawngreen;
+            /* shorthand - border-color: blue lawngreen crimson gold;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelos de Caixas</h1>
+    <h2>Box Level - Costumam existir independentemente, como caixas mesmo.</h2>
+    <p>Inline level - são itens que não quebram linhas. Exemplo:<a href="#">Temos os links com a tag a que não quebram a linha.</a></p>
+    <h3>Lembrando que:</h3>
+    <p>Para a borda (border), temos várias opções de formatação:</p>
+    <ul>
+        <li>border</li>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <p>Sendo que, para cada um deles, podemos selecionar qual lado queremos alterar adicionando o comando top, bottom, left e right (Exemplo: border-left-color).</p>
+    <p>Podemos, também, adicioná-los aos códigos de forma simplificada, seguindo sempre a sequência mencionada na lista:</p>
+    <p><strong>Exemplo: border: 5px groove blue;</strong></p>
+    <p>No exemplo acima, simplificamos o código border, agrupando várias formatações ao mesmo tempo: width (largura), style (estilo) e color (cor). Essa simplificação é chamada de <strong>shorthand</strong></p>
+    <p>Podemos utilizar a shorthand para vários comandos, desde que eles possuam identidade de formatação (border, padding, margin, etc). Apenas devemos sempre seguir os parâmetros e respeitar a ordem de comandos.</p>
+    <p>Para formatação de características não numéricas, seguir a sequência:</p>
+    <ul>
+        <li>width</li>
+        <li>style</li>
+        <li>color</li>
+    </ul>
+    <p>Para formatação de características numéricas, seguir a sequência:</p>
+    <ul>
+        <li>top</li>
+        <li>right</li>
+        <li>bottom</li>
+        <li>left</li>
+    </ul>
+    <p>Para lados (top, right, bottom, left) devemos sempre seguir o movimento horário para inclusão dos comandos.</p>
+    <p>Se quisermos que o box fique centralizado na página e que se adapte ao dispositivo e tamanho de tela utilizado, devemos incluir o comando margin: auto (para textos, devemos utilizar o comando text-align: center).</p><br>
+
+    <h1>Por padrão, o H1 é display: block (box-level).</h1><br>
+    <h1 id="exemplo">Contudo, se eu quero transformar ele em inline-level, preciso apenas incluir o comando display:inline; nos códigos de style.</h1>
+</body>
+</html>
