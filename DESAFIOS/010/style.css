@@ -29,6 +29,7 @@ O mesmo serve para fontes.
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
+
 @font-face {
     font-family:'android';
     src: url('imagem/fontes/idroid.otf') format('opentype');
@@ -41,105 +42,162 @@ O mesmo serve para fontes.
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+a.externo::after {
+    content: '\00a0\1f517';
+}
+
 body {
     background-color: var(--cor0);
     font-family: 'Bebas Neue', cursive;
 }
 
 header {
-    background-image:linear-gradient(to top, var(--cor5), var(--cor2));
-    height: 200px;
+    background-image:linear-gradient(to top, var(--cor5), var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
 }
+
 header > h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
-    text-align: center;
     color: white;
-    padding: 25px;
     text-shadow: 2px 2px 2px rgb(80, 79, 79);
+    margin-bottom: 20px;
 }
+
 header > p {
+    max-width: 600px;
+    font-size: 1.2em;
+    margin: auto;
     text-align: center;
     color: white;
-    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
     text-shadow: 2px 2px 2px rgb(80, 79, 79);
 }
+
 nav {
     padding: 8px;
     background-color:var(--cor5);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.452);
 }
+
 nav > a {
     text-decoration: none;
     color: white;
-    padding: 5px;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.3s;
 }
-nav > a:hover {
-    background: linear-gradient(to right, #1A5C38, #37ac6b);
-    border-radius: 3px;
-}
-main {
-    background-color: white; 
-    max-width: 827px;
-    min-width: 320px;
-    border-radius: 10px;
-    margin: auto;
-    box-shadow: 0px 3px 4px 2px var(--cor5);
- }
 
-main> img {
-    width: 100vw;
-}
-h1 {
-    font-family: 'android';
-    color: #1A5C38;
-    text-indent: 0px;
-    font-size: 25px;
-    text-shadow: 2px 2px 2px rgba(80, 79, 79, 0.603);
-}
-h2 {
-    font-family: 'android', Times, serif;
-    background-image: linear-gradient(to right, var(--cor3), white);
-    color: #1A5C38;
-    padding: 5px;
-    font-size: 20px;
-    margin: 5px;
-    text-indent: 0px;
-    text-shadow: 2px 2px 2px rgba(80, 79, 79, 0.603);
+nav > a:hover {
+    background: linear-gradient(to right, var(--cor5), var(--cor3), var(--cor5));
+    color: white;
     
 }
 
+main {
+    background-color: white; 
+    padding: 20px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 3px 4px 2px rgba(34, 34, 34, 0.514);
+    border-radius: 0px 0px 10px 10px;
+ }
+
+main h1 {
+    font-family: 'android';
+    color: var(--cor4);
+    text-indent: 0px;
+    padding: 5px;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(80, 79, 79, 0.603);
+ }
+
+main h2 {
+    font-family: 'android', Times, serif;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), white);
+    color: var(--cor4);
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px;
+    text-indent: 10px;
+    text-shadow: 2px 2px 2px rgba(80, 79, 79, 0.603);
+    
+}
+a {
+    text-decoration:none;
+    color: var(--cor5);
+}
+a:hover {
+    background-color:var(--cor2);
+    color: var(--cor5);
+    padding:5px;
+    border-radius: 5px;
+}
 article, p {
     text-align: justify;
     text-indent: 30px;
     padding: 10px;
+    line-height: 1.5em;
 }
+main img {
+    width: 100%; /*Tentei colocar vw, mas não aceitou para que a foto se adaptasse à página automaticamente.*/
+ }
+ main img.pequena {
+     max-width: 300px;
+     display: block; /*Como imagens não são consideradas caixas, temos que incluir o comando display: block, além de margin: auto, para que a imagem fique centralizada.*/
+     margin: auto;
+ }
 aside > h3 {
-    background-color: #1A5C38;
+    background-color: var(--cor4);
     padding: 6px;
+    text-indent: 0px;
     color: white;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 aside {
-    background-color: #9ecfb4;
-    border-radius: 5px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+}
+aside p {
+    padding: 10px;
 }
 aside > ul {
-    list-style-type: none;
+    list-style-type: '\2714\00a0';
+    list-style-position: inside;
+    columns: 2;
+    margin: 10px 0px;
+    text-indent: 6px;
+}
+a {
+    text-decoration:none;
+    color: var(--cor5);
+    font-weight: bold;
+}
+a:hover {
+    background-color: var(--cor2);
+    padding:5px;
 }
 
 footer {
     background-color: var(--cor5);
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 5px;
     box-shadow: 2px 2px 2px 4px gray;
 }
 footer > a {
     text-decoration: none;
-    color: white;
+    color: var(--cor3);
 }
 footer > a:hover {
-    background: linear-gradient(to right, var(--cor2), var(--cor5));
+    background: linear-gradient(to right, var(--cor5), var(--cor2), var(--cor5));
     border-radius: 3px;
+    color: var(--cor1);
+    padding:5px;
 }
