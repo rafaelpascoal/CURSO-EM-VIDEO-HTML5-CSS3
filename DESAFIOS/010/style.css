@@ -61,6 +61,7 @@ header {
 header > h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
+    font-weight: normal;
     color: white;
     text-shadow: 2px 2px 2px rgb(80, 79, 79);
     margin-bottom: 20px;
@@ -82,7 +83,6 @@ nav {
     background-color:var(--cor5);
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.452);
 }
-
 nav > a {
     text-decoration: none;
     color: white;
@@ -90,13 +90,11 @@ nav > a {
     font-weight: bold;
     transition-duration: 0.3s;
 }
-
 nav > a:hover {
     background: linear-gradient(to right, var(--cor5), var(--cor3), var(--cor5));
     color: white;
     
 }
-
 main {
     background-color: white; 
     padding: 20px;
@@ -109,6 +107,7 @@ main {
 
 main h1 {
     font-family: 'android';
+    font-weight: normal;
     color: var(--cor4);
     text-indent: 0px;
     padding: 5px;
@@ -119,6 +118,7 @@ main h1 {
 main h2 {
     font-family: 'android', Times, serif;
     background-image: linear-gradient(to right, var(--cor3), var(--cor2), white);
+    font-weight: normal;
     color: var(--cor4);
     border-radius: 5px 0px 0px 5px;
     padding: 5px;
@@ -151,6 +151,22 @@ main img {
      max-width: 300px;
      display: block; /*Como imagens não são consideradas caixas, temos que incluir o comando display: block, além de margin: auto, para que a imagem fique centralizada.*/
      margin: auto;
+ }
+ div.video {
+    background-color:var(--cor5);
+    margin: 20px -30px 20px -30px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+    
+ }
+ div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
  }
 aside > h3 {
     background-color: var(--cor4);
