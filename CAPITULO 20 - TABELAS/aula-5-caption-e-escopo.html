@@ -18,6 +18,9 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: rgb(102, 102, 179);
+            color: white;
+            border: 2px solid black;
             
         }
         td, th {
@@ -40,8 +43,8 @@
     <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </tr>
     </thead>
     <tbody>
@@ -92,7 +95,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">0000000000000000</td>
         </tr>
     </tfoot>
@@ -104,5 +107,12 @@
     <li>TBODY - Pode conter TR, TD, TH - para o Corpo das tabelas (local em que os dados serão inseridos)</li>
     <li>TFOOT - Pode conter TR, TD, TH - para os casos em que há uma finalização da tabela (total, por exemplo)</li>
    </ul>
+   <h2>CAPTION</h2>
+   <p>Incluído após table e antes de thead, o comando caption é utilizado como uma legenda da tabela criada. </p>
+   <h2>ESCOPO (Scope)</h2>
+   <p>Escopo é o comando utilizado para relacionar os dados inseridos, tanto em linhas quanto em colunas.</p>
+   <p>Exemplo:</p>
+   <p>O título "Estados" (th) se relaciona com a coluna em que todos os estados são inseridos (td) e, portanto, deve-se inserir o código scope='col' ou scope='colgroup' (de "mesma coluna")</p>
+   <p>Já a "célula" Total de Habitantes (ao final da tabela - th), deve ser relacionada com o número que se encontra ao seu lado e, portanto, na mesma linha "0000000000000000" (td), com o código scope='row'.</p>
 </body>
 </html>
