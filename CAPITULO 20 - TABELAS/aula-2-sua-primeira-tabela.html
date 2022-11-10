@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr.linha {
+            background-color: gray;
+        }
+        td.dado {
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td class="dado">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <h2>Hierarquia de tabelas simples</h2>
+    <ol>
+        <li>Table - Tabela</li>
+        <li>Table Row - Linhas de Tabela - tr</li>
+        <ol>
+            <li type="A">Table Header - Cabeçalho de tabela - th</li>
+            <li type="A">Table Data - Dados de tabela - td</li>
+        </ol>
+    </ol>
+    <h2>Configurações de Tabela - CSS</h2>
+    <h3>Border</h3>
+    <p>O comando border é utilizado para criar uma borda entre as células (no caso, em td que são os dados relacionados às celulas).</p>
+    <h3>Border-collapse: Collapse</h3>
+    <p>O comando border collapse é utilizado para unir, fundir as bordas das células para que estas tenham o aspecto de tabelas de excel</p>
+    <h2>Observação Final</h2>
+    <p>Lembrando que, caso haja um desrespeito da hierarquia das tabelas (td contido por tr e ambos contidos por table), haverá inconsistência no resultado final da tabela.</p>
+</body>
+</html>
