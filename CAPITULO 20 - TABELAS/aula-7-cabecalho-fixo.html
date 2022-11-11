@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background: gray;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(102, 102, 179);
+            color: white;
+            border: 2px solid black;
+            
+        }
+        td, th {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background: gray;
+            color: white;
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+   <h1>Tabelas Grandes com Cabeçalhos Fixos</h1>
+   <p>Inicialmente, devemos incluir no CSS o comando position: relative em table.</p>
+   <p>Depois, devemos criar um código relacionado com os itens que serão fixados na tabela. Nesse caso, utilizamos o caminho: thead > tr > td [Pois o caminho até o cabeçalho (th) está dentro de theah, seguido de tr]. Nele, devemos incluir os comandos:</p>
+   <ul>
+    <li>position: sticky; (significa grudável em inglês)</li>
+    <li>top:-1px; - Colocamos o comando top para que as células selecionadas fiquem fixas no topo, além de utilizar a referência -1px para que fiquem grudadas na parte de cima da página, sem nenhuma margem superior.</li>
+    <li>background-color: gray; - Colocamos o mesmo background-color que foi inserido inicialmente no fundo das células selecionadas. Caso contrário, apenas as letras serão movidas, sem fundo.</li>
+   </ul>
+   <p>Caso após o final da tabela tenha mais texto, as células fixadas serão encerradas com a própria tabela, não sendo necessária nenhuma outra inclusão de comandos para que isso ocorra.</p>
+   <p>Por fim, é importante frisar que no momento em que assisti o curso, esse recurso não funcionava bem no safari.</p>
+
+   <table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Maceió</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Santa catarina</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Maceió</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Santa catarina</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Maceió</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Santa catarina</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Maceió</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Santa catarina</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Maceió</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Santa catarina</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">45 919 063</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">45 919 063</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000000000000000</td>
+        </tr>
+    </tfoot>
+   </table>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia eligendi, perferendis sit voluptate dolores? Quia magnam repellendus quibusdam, delectus voluptatem aliquid nobis molestiae! Dolorum eos ipsum voluptatibus tenetur optio.</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ullam dolorem mollitia repudiandae laborum iure, vero voluptates nemo laboriosam odio numquam voluptatum et consequuntur eaque accusamus quis temporibus incidunt cumque?</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem dicta, aperiam perferendis corporis facere earum atque laborum, nobis amet placeat reprehenderit quidem cumque et libero est natus eligendi temporibus!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestias incidunt. Porro placeat perferendis provident eveniet autem tempora. Alias minima error hic nulla numquam deserunt repudiandae, quis at architecto animi.</p>

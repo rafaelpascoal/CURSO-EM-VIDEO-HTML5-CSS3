@@ -32,6 +32,9 @@
             background: gray;
             color: white;
         }
+        tbody > tr:nth-child(2n){
+            background-color: yellow;
+        }
         .num {
             text-align: right;
         }
@@ -111,8 +114,16 @@
    <p>Incluído após table e antes de thead, o comando caption é utilizado como uma legenda da tabela criada. </p>
    <h2>ESCOPO (Scope)</h2>
    <p>Escopo é o comando utilizado para relacionar os dados inseridos, tanto em linhas quanto em colunas.</p>
-   <p>Exemplo:</p>
+   <h3>Exemplo:</h3>
    <p>O título "Estados" (th) se relaciona com a coluna em que todos os estados são inseridos (td) e, portanto, deve-se inserir o código scope='col' ou scope='colgroup' (de "mesma coluna")</p>
    <p>Já a "célula" Total de Habitantes (ao final da tabela - th), deve ser relacionada com o número que se encontra ao seu lado e, portanto, na mesma linha "0000000000000000" (td), com o código scope='row'.</p>
+   <h2>EFEITO ZEBRADO DAS TABELAS</h2>
+   <p>O efeito zebrado nas tabelas pode ser realizado com o comando tr:nth-child(), introduzindo as palavras even (par em inglês) ou odd (ímpar em inglês) dentro dos parênteses. Além disso, pode-se introduzir o termo "colorar um número + n dentro dos parênteses [Exemplo: tr:nth-child(2n)]</p>
+   <p>Lembrando que, caso eu tenha um fundo colorido e/ou com uma imagem e quero deixar a tabela zebrada, tenho que colocar o comando de zebrado para todas as linhas.</p>
+   <h3>Exemplo:</h3>
+   <p>Para tabela com linhas da cor cinza e branca, devo escrever duas vezes o comando tr:nth-child, uma para introduzir cor nas linhas pares (even) e uma para introduzir cores nas linhas ímpares (odd).</p>
+
+  
+
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <p>Para mesclar colunas e linhas, utilizamos dois comandos:</p>
+    <ul>
+        <li>colspan: "Aqui colocamos o número de colunas que queremos mesclar"</li>
+        <li>rowspan: "Aqui colocamos o número de linhas que queremos mesclar"</li>
+    </ul>
+    <p>Colspan - expansão de colunas</p>
+    <p>Rowspan - Expansão de linhas</p>
+    <p>Para mesclarmos tanto colunas quanto linhas, devemos introduzir os comandos colspan e rowspan, respectivamente, na célula que queremos mesclar (Como exemplificado na célula B - colspan - e na célula G - rowspan).</p>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td rowspan="2">G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>Q</td>
+            <td>R</td>
+        </tr>
+
+    </table>
+</body>
+</html>
