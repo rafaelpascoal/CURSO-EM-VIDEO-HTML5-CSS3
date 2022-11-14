@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>ESCOPOS DE GRUPO - TH´S</h1>
+    <table>
+        <table>
+        
+            <thead>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Roy Story</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tfoot>
+        </table>
+
+        <h2>Outros Escopos além de Colunas e Linhas (Aulas 6 e 6)</h2>
+        <p>No caso dos itens incluídos em THEAD (Grupo, Nomes e Filmes), devemos criar os scopes col (relacionado a colunas) e colgroup (relacionado a um grupo de colunas)</p>
+        <h3>Exemplo:</h3>
+        <p>No caso de Grupo, seu th será configurado com o scope col, pois o item se encontra em uma única coluna.</p>
+        <p>Já o item Filmes, em seu th, foi incluído o comando colgroup, pois o ítem se encontra em 3 colunas (um grupo de colunas) - os filmes estão dispostos em 3 colunas, como já dito.</p>
+        <h3>Exemplo 2:</h3>
+        <p>Já nos casos dos itens mulheres e homens, é utilizado o comando scope rowgroup.</p>
+        <p>No caso do item total, o comando utilizado é scope row, tendo em vista que o item relacionado ao total é uma única célula e, portanto, é utilizado row.</p>
+</body>
+</html>
