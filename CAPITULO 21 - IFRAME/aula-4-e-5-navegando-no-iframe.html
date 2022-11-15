@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 100vw;
+            height: 450px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegação no iframe</h1>
+    <p>Para criar uma lista que seja aberta no iframe, inicialmente, precisamos criar a lista.</p>
+    <p>Posteriormente, inserimos o <strong>name: "coloco o nome que quiser aqui"</strong> em iframe para identificá-lo como destino (Da mesma forma que inserimos id´s e class).</p>
+    <h2>Exemplo:</h2>
+    <p>name:"frame"</p>
+    <p>Já na lista, inserimos o <strong>name</strong> em target (target="o nome que escolhemos para name").</p>
+    <ul>
+        <a href="aula-4-pagina1.html" target="frame"><li>Primeira Página</li></a>
+        <a href="aula-4-pagina2.html" target="frame"><li>Segunda Página</li></a>
+        <a href="aula-4-pagina3.html" target="frame"><li>Terceira Página</li></a>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor id nesciunt neque accusamus molestias inventore accusantium sed culpa, distinctio provident qui iusto placeat. Cupiditate hic dicta sed, repellendus ipsa pariatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus esse autem error ducimus? Dolores laborum, blanditiis iure ullam reprehenderit et voluptate distinctio possimus fuga atque! Reiciendis veniam reprehenderit mollitia repellendus.</p>
+
+    <iframe src="aula-5-pagina0.html" frameborder="0" name="frame">
+        <p>Infelizmente, seu navegador não é compatível com isso.</p>
+    </iframe>
+    <h2>Outra possibilidade de incluir uma página inicial (de apresentação) no iframe</h2>
+    <p>Uma das formas de se criar uma página inicial de apresentação no iframe é criar uma página em html separada e incluí-la em src.</p>
+    <p>Contudo, caso queira algo mais simples, é possível incluir a configuração dessa página na própria tag do iframe com o comando <strong>srcdoc=""</strong></p>
+    <h3>Exemplo:</h3>
+    <p><iframe srcdoc="<h1>Escolha uma das opções acima.</h1>img src='imagens/cursoemvideo.png'" frameborder="0" name="frame"></iframe></p>
+    <p>Percebe-se, no exemplo acima, que é possível incluir imagens, títulos, dentre outras opções. Porém, não é recomendado, pois o código fica muito poluído. O indicado é criar uma nova página.</p>
+</body>
+</html>

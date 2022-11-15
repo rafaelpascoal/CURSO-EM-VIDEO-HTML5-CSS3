@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        iframe {
+            
+            width: 600px;
+            height: 300px;
+            
+        }
+        iframe#tabela {
+            display:block;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Conteúdo Local no TFRAME</h1>
+    <h1>Conteúdo Local no IFRAME</h1>
     <p>
         Conteúdo local 
         
-        <iframe src="" frameborder="0"></iframe> 
+        <iframe src="aula-3-pagina-referencia.html" frameborder="0"></iframe> 
         
         no iframe.
     
     </p>
+    <h2>Conteúdo Local</h2>
+    <p>Para incluir o conteúdo local no iframe, inicialmente precisaremos de uma outra página criada (foi o caso da página "aula-3-pagina-referencia").</p>
+    <p>Posteriormente, incluímos em src o caminho da página mencionada.</p>
+    <h2>Outras possibilidades com o IFRAME - Tabelas</h2>
+    
+    <iframe id="tabela" src="aula-3-pagina-conteudo-local-tabela.html" frameborder="0"></iframe>
+
+    <p>De qualquer forma, a forma mas indicada para apresentar uma tabela é incluí-la dentro de uma div e configurá-la com overflow, não sendo recomendado utilizar iframe, apesar de ser possível.</p>
 </body>
 </html>
