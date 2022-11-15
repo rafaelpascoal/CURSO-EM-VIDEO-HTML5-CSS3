@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 600px;
+        }
+        iframe#java {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>COMANDO SANDBOX - PROTEÇÃO 1</h1>
+    <h2>Meu Site Principal</h2>
+    <p>Para manter os dados do usuário seguros com relação a qualquer tentativa maliciosa do site incluído no iframe, podemos introduzir o comando <strond>sandbox="sandbox"</strond> dentro do código do iframe.</p>
+    <p>Além da opção sandbox (segurança máxima), o comando SANDBOX possui as seguintes opções:</p>
+    <ul>
+        <li><strong>allow-same-origin</strong> - Para IFRAMES que possuem o mesmo servidor.</li>
+        <li><strong>allow-forms</strong> - PAra autorização apenas de formulários;</li>
+        <li><strong>allow-scripts</strong> - Para autorização apenas de scripts.</li>
+    </ul>
+
+    <iframe src="aula-7-tornando-iframe-mais-seguro.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <iframe id="java" src="aula-7-pagina-javascript.html" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+
+    <p>Com isso, o usuário, mesmo se quiser cadastrar alguma informação nos formulários disponibilizados no iframe, não conseguirão concretizar a solicitação (Haverá um bloqueio dos recursos e, ao clicar em "Cadastrar" no formulário dentro do iframe, este não funcionará).</p>
+
+    <H1>COMANDO REFERRERPOLICY - PROTEÇÃO 2</H1>
+    <p>Outro comando que traz mais segurança ao IFRAME é o <strong>REFERRERPOLICY</strong> que possui duas opções:</p>
+    <ul>
+        <li><strong>referrerpolicy="no-referrer-when-downgrade"</strong> - E o padrão do comando.</li>
+        <li><strong>referrerpolicy="no-referrer"</strong> - Caso queira mais segurança - O item que está contido no IFRAME não coletará nenhum tipo de informação do usuário com esse comando.</li>
+    </ul>
+</body>
+</html>
