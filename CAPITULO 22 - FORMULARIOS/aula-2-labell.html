@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Label</h1>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+            <input type="submit" value="Enviar">
+    </form>
+
+    <h1>AUTOCOMPLETE: OFF</h1>
+    <p>Esse recurso (autocomplete:off) é utilizado para que nao haja sugestão de autocompletar o texto que está sendo digitado pelo usuário. Ele é incluído dentro da TAG FORM (dentro de <'form'>)</p>
+    <h1>ACTION</h1>
+    <p>O recurso ACTION aparece automaticamente no momento em que a TAG FORM é acionada. Ele é o endereço de destino do formulário (para onde os dados irão depois que o usuário apertar o botão de Enviar). No caso do curso, utilizamos a linguagem PHP (linguagem mais popular), mas existem outras: ASP, Java servidor, por exemplo.</p>
+    <h1>NAME</h1>
+    <p>O recurso NAME é mais útil para HTML e PHP e é utilizado para nomear o item incluído (a exemplo do item nome que recebeu o name de nome também).</p>
+    <h1>ID</h1>
+    <p>Já o ID é mais útil em Javascript, inclusive para o uso do recurso LABEL.</p>
+    <h1>LABEL</h1>
+    <p>O recurso LABEL é utilizado para realizar a ligação entre o texto incluído e o texto que será digitado na caixa de diálogo (Exemplo: O item Nome será ligado à caixa de diálogo que se encontra ao seu lado e o que for digitado nela será considerado um nome). Dentro do recurso label existe o recurso FOR. Esse recurso determina a ligação e o ID deverá ser utilizado para que essa ligação seja realizada.</p>
+    <p>Além dessa ligação ser importante, ela gera um aumento da área, tendo em vista que, independentemente do usuário clicar na caixa de diálogo ou no texto identificador (exemplos: Nome e Sobrenome), a caixa de diálogo será acionada. Isso é relevante para usuários que utilizam celulares, pois as telas são menores, o que dificulta a seleção de qualquer formulário e, com esse recurso habilitado, facilitará a referida seleção.</p>
+</body>
+</html>

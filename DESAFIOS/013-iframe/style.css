@@ -39,8 +39,8 @@ iframe#tela {
 section#redes {
     text-align: right;
 }
-img {
-    width: 50px;
+section#redes img {
+    width: 60px;
     margin: 10px;
     border-radius: 50%;
     box-shadow: 3px 3px 5px rgba(46, 45, 45, 0.788);
@@ -49,5 +49,5 @@ img {
 section#redes > a > img:hover {
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.658);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }

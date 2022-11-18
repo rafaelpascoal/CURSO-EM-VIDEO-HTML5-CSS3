@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GET E POST</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    <h1>MÉTODOS DE SEGURANÇA EM ENVIO DE FORMULÁRIOS: GET E POST</h1>
+    <p>Por padrão, se não há inclusão de método (method), o recurso que será habilitado é o GET (situação que não fornece segurança aos dados inseridos pelo usuário, pois as informações aparecem na url).</p>
+    <p>Podemos utilizar o método GET nas seguintes situações (e quando os dados a serem inseridos não forem sensíveis):</p>
+    <ul>
+        <li>Nome;</li>
+        <li>Peso;</li>
+        <li>Altura;</li>
+        <li>Cor de olhos;</li>
+        <li>Em links que a intenção é que sejam comparilháveis;</li>
+        <li>Dados de até 3000 bytes;</li>
+        <li>ETC</li>
+    </ul>
+    <p>Com o método POST, as informações inseridas pelo usuário não aparecerão na url, mas isso não quer dizer que e o método mais seguro de todos, pois existem formas de acessarmos os dados inseridos pelo usuário. (clicar com o botão direito na tela do formulário e selecionar inspecionar -> Network -> Sececionar o arquivo de envio dos dados -> Headers)</p>
+    <p>Já o método post deve ser utilizado nas seguintes situações (e quando as informações forem sensíveis):</p>
+    <ul>
+        <li>Senhas;</li>
+        <li>Dados Bancários;</li>
+        <li>Dados fiscais;</li>
+        <li>Em links que a intenção é que não sejam comparilháveis;</li>
+        <li>Número de cartão de crédito.</li>
+    </ul>
+    <p>Portanto, é necessário utilizar o HTTPS que é mais seguro (outro patamar de estudos).</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEXTO E SENHAS</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusuario">Usuário</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" size="60" placeholder="mínimo 8 letras">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <h1>INPUT: TEXT</h1>
+    <p>O recurso INPUT possui alguns recursos, dentre eles, o TEXT que é utilizado para inserir textos (Nomes, sobrenomes, usuários, etc) </p>
+    <h1>INPUT: PASSWORD</h1>
+    <p>Já para senhas, utilizamos o input do tipo password.</p>
+    <H1>REQUIRED</H1>
+    <p>O recurso required é inserido dentro de input para que aquele campo seja obrigatório, não sendo possível enviar o formulário sem seu preenchimento.</p>
+    <h1>MINLENGHT E MAXLENGHT</h1>
+    <p>São recursos que determinam o mínimo e máximo de caracteres exigidos para que seja validada a informação inserida nos campos (Exemplo: Para o usuário, é exigido o minimo de 5 caracteres e máximo de 15 caracteres. Se for menos que 5 ou mais que 15, não será validado e o usuário terá que corrigir para prosseguir).</p>
+    <h1>SIZE</h1>
+    <p>Size é um recurso que configura o tamanho da caixa de diálogo.</p>
+    <h1>PLACEHOLDER</h1>
+    <p>Utilizamos o recurso do placeholder para inserirmos um texto de sugestão dentro da caixa de diálogo (Exemplo: Na caixa de diálogo de Usuário, inserimos o texto nome do usuário com o placeholder). Assim que o usuário selecionar a caixa e iniciar a digitação, o texto desaparecerá.</p>
+</body>
+</html>

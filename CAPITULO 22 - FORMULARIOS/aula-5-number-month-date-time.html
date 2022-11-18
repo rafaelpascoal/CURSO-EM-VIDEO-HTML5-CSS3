@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+   
+    margin: 10px;
+    }
+</style>
+<body>
+    <h1>ELEMENTOS NUMBER, MONTH, DATE E TIME</h1>
+    <form action="cadastro.php">
+
+        <label for="inumber">Número</label>
+        <input type="number" name="number" id="inumber" min="0" max="10" placeholder="0 a 10" step="0.5"><br>
+        
+        <label for="imonth">Mês</label>
+        <input type="month" name="month" id="imonth"><br>
+       
+        <label for="idate">Data</label>
+        <input type="date" name="date" id="idate"><br>
+       
+        <label for="itime">Hora</label>
+        <input type="time" name="time" id="itime"><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <h1>STEP</h1>
+    <P>O recurso step (degrau em tradução ao português) é utilizado para criarmos números fracionados (Exemplo: 5,5), ou seja, determina como quero que seja contado o número: de 5 em 5, de 0,5 em 0,5, de 10 em 10, e assim por diante.</P>
+    <h1>MIN E MAX</h1>
+    <P>Os recursos min e max são utilizados para determinarmos o numero mínimo e o número máximo que serão aceitos no campo (Exemplo: De 0 a 10).</P>
+    <H1></H1>
+</body>
+</html>
