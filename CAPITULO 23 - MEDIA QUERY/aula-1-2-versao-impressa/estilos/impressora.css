@@ -1,0 +1,19 @@
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+menu, article#explic {
+    display: none;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site cursoemvideo.com';
+}

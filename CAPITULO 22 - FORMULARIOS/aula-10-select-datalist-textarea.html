@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php">
+        <p>
+           <label for="iest">Estado</label>
+           <select name="estado" id="iest">
+
+                <option value="" selected>--------- Escolha ---------</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+           </select> 
+           <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Escolha sua profissão">
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="cont">Contador</option>
+                <option value="med">Médico</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="adv">Advogado</option>
+            </datalist>
+           </p>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <h1>SELECT</h1>
+    <p>O recurso SELECT é utilizado para caixas de diálogos em que o usuário, ao clicar na seta posicionada no lado direito deste abre uma lista de opções.</p>
+    <h1>OPTION</h1>
+    <p>O recurso OPTION é justamente a opção que será incluída no recurso SELECT.</p>
+    <h1>OPTGROUP</h1>
+    <p>Para que possamos criar subclasses dentro do recurso SELECT (como demonstrado no presente exercício - Região Sudeste e Região Nordeste), envelopamos todos os options que são da mesma subclasse com o recurso OPTGROUP.</p>
+    <h1>DATALIST - DATAL</h1>
+    <p>O recurso DATALIST também cria uma lista de opções para que o usuário, ao selecionar a caixa de diálogo, as escolha.</p>
+    <p>Contudo, há uma diferença entre DATALIST e SELECT. Enquanto o último já cria uma caixa de diálogo com a seta de seleção, o DATALIST precisa de uma vinculação entre as options e o input text.</p>
+    <p>Primeiro cria-se um id para o DATALIST e depois insere esse id no recurso LIST, inserido no item input</p>
+    <p>MAS ENTÃO, POR QUE EU USARIA O DATALIST?</p>
+    <p>Simples, pois o DATALIST permite que o usuário inclua um item que não existe na lista pré-elaborada. Exemplo: Se eu for cozinheiro, apesar da profissão não estar na lista pré-elaborada, eu consigo inserí-la como opção.</p>
+    <h1>TEXTAREA</h1>
+    <p>O TEXTAREA é o recurso utilizado para se criar uma caixa de diálogo em que o usuário poderá escrever um texto (Geralmente, é utilizado para opções de reclamações, suporte, etc, em que o usuário precisa explicar quais são suas necessidades).</p>
+    <p>Para a inclusão desse recurso, é importante manter o method POST do formulário, tendo em vista a limitação de 3 mil bytes do method GET.</p>
+</body>
+</html>

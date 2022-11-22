@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: lightgray;
+    }
+    fieldset {
+        background-color: rgba(250, 201, 208, 0.5);
+        width: 500px;
+        border: 1px solid blue;
+        border-radius: 10px;
+    }
+    legend {
+        border: 1px solid blue;
+        background-color: lightgray;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <h1>TELEFONE E E-MAIL</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="ifone">Telefone</label>
+                <input type="tel" name="fone" id="ifone" pattern="^[0-9]{4}-[0-9]{4}$" placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <label for="imail">E-mail</label>
+                <input type="email" name="email" id="imail" placeholder="nome@provedor...">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+
+
+    </form>
+    <h1>PATTERN</h1>
+    <p>O recurso pattern é utilizado para configurar os formatos das expressões regulares - REGEX.</p>
+    <p>Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string. Em JavaScript, expressões regulares também são objetos. Elas podem ser utilizadas com os métodos exec (en-US) e test (en-US) do objeto RegExp (en-US), e com os métodos match (en-US), replace (en-US),search (en-US), e split (en-US) do objeto String. Este capítulo descreve o uso de expressões regulares em JavaScript.</p>
+    <ul>
+        <li>pattern="^[0-9]{4}-[0-9]{4}$" - Esse código significa que o número digitado deve ter, necessariamente, 4 dígitos de 0 a 9 antes do traço e 4 dígitos de 0 a 9 depois do traço;</li>
+        <li>pattern="^\d{4,5}-\d{4}$ - Esse código significa que o número digitado deve ter, necessariamente, de 4 a 5 dígitos antes do traço (para casos de celular são 5 dígitos) e 4 dígitos depois do traço";</li>
+        <li>pattern="^\(\d{2}\)\d{4,5}-\d{4}$" - Nesse caso, incluímos a possibilidade de um DDD para o número do telefone.</li>
+    </ul>
+    <h1>FIELDSET</h1>
+    <p>Fieldset é um recurso utilizado para criar uma caixa que envolve o formulário.</p>
+    <h1>LEGEND</h1>
+    <p>Legend é o recurso utilizado dentro do recurso FIELDSET para identificar o que será visualizado dentro do quadro.</p>
+</body>
+</html>
