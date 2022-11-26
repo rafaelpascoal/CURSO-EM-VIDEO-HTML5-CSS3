@@ -1,0 +1,78 @@
+/* @media screen and (max-width: 600px){
+    
+} REFERÊNCIAS INSERIDA EM MOBILE FIRST
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    
+}*/
+
+
+@media print {
+
+
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+    h1#tel {display: none;}
+    h1#tab {display: none;}
+    h1#imp {display: block;}
+    h1#comp {display: none;}
+    h1#tele {display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+    h1#tel {display: none;}
+    h1#tab {display: block;}
+    h1#imp {display: none;}
+    h1#comp {display: none;}
+    h1#tele {display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+
+    h1#tel {display: none;}
+    h1#tab {display: none;}
+    h1#imp {display: none;}
+    h1#comp {display: block;}
+    h1#tele {display: none;}
+}
+
+@media screen and (min-width: 1201px) {
+   body {
+    background-image: url('../imagens/back-tv.jpg');
+   }
+    
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+
+    h1#tel {display: none;}
+    h1#tab {display: none;}
+    h1#imp {display: none;}
+    h1#comp {display: none;}
+    h1#tele {display: block;}
+}

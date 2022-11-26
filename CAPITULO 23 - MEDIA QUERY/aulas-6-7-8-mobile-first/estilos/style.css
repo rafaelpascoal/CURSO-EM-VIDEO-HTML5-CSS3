@@ -43,3 +43,9 @@ img#tablet {display: none;}
 img#print {display: none;}
 img#pc {display: none;}
 img#tv {display: none;}
+
+h1#tel {display: block;}
+h1#tab {display: none;}
+h1#imp {display: none;}
+h1#comp {display: none;}
+h1#tele {display: none;}

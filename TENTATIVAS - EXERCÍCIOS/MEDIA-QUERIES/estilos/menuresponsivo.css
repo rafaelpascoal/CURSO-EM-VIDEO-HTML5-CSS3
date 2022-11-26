@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+
+span#burguer {
+    background-color: darkslategray;
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+span#burguer:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+nav {
+    background-color: gray;
+    display: none;
+}
+
+nav > a {
+    display: block;
+    border: 1px solid rgb(94, 110, 110);
+    background-color: rgb(94, 110, 110);
+    padding: 10px;
+    margin-bottom: 1px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav > a:hover {
+    background-color: rgb(165, 164, 164);
+    border: 1px solid rgb(165, 164, 164);
+}
+main {
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 50vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+article > p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer > p {
+    background-color: rgb(94, 110, 110);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

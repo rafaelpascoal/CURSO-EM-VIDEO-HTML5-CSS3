@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/menuresponsivo.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <nav id="menu">
+        <a href="#">Opção 1</a>
+        <a href="#">Opção 2</a>
+        <a href="#">Opção 3</a>
+        <a href="#">Opção 4</a>
+        <a href="#">Opção 5</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore earum perferendis laboriosam possimus. Sequi, a illo ut, quis dolores voluptatum ad suscipit quos sunt magnam iste et ab nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, officia ducimus tempora non, error asperiores voluptate nulla blanditiis, ipsum consectetur rem reiciendis! Sint dicta itaque nihil totam officia! Magni, unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo, corrupti nobis esse dignissimos blanditiis voluptatibus accusantium magni dolores reprehenderit ipsa recusandae eaque officiis omnis sapiente quisquam necessitatibus ratione maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni totam ullam aliquam ad temporibus in nulla minus dolorem exercitationem quod, maxime eius veniam, cum aperiam commodi voluptate veritatis. Impedit, aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolorem non consectetur ratione excepturi eum distinctio earum pariatur et repellendus, alias error neque aperiam veniam similique saepe quidem? Velit, laudantium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et minus. Nobis facilis magnam quidem voluptates at alias quisquam aspernatur eligendi dolor. Aspernatur aperiam ullam consequuntur iste quas veritatis maiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio, minima voluptas eligendi suscipit quos excepturi animi accusamus mollitia laudantium est maxime consequuntur provident voluptatem, unde facilis, eos consectetur sapiente.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado em curso de HTML e CSS em 2022.</p>
+    </footer>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
